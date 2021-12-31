@@ -61,7 +61,7 @@ CompilerSet efm +=%-G%.%#
 if filereadable("Makefile")
   CompilerSet makeprg=make
 else
-  CompilerSet makeprg=python
+  CompilerSet makeprg=python3\ -u\ %
 endif
 
 " vim:foldmethod=marker:foldlevel=0
